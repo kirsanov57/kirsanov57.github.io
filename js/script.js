@@ -3,13 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
         checkbox = document.querySelectorAll('.checkbox_span'),
         resetBtn = document.querySelector('.test__post_reset'),
         postBtn = document.querySelectorAll('.test__post_post'),
-        formSuccessfully = document.querySelector('.test__form');
+        formSuccessfully = document.querySelector('.test__form'),
+        formPost = document.querySelector('.myform');
 
     
     postBtn[1].addEventListener('click', function (e) {
         e.preventDefault();
         formSuccessfully.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        formPost.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+
+            const fetchResp = fetch('../php/form_post.php', {
+                method: 'POST',
+                body: formData
+            });
+        });
     });
 
     postBtn[0].addEventListener('click', () => {
@@ -64,4 +74,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+
 });
