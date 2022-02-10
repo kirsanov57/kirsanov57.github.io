@@ -31,7 +31,7 @@
                     <span class = "necessarily">* Обязательно</span> 
                 </p>
             </div>
-            <form class = 'myform'>
+            <form class = 'myform' onsubmit="return false;">
                 <div class="test__personal">
                     <h2>Имя Фамилия <span class = "necessarily">*</span></h2>
                     <input class = 'name' type="text" name='personal'>
@@ -40,21 +40,21 @@
                     <h2>1. Какой буквой обозначена стрелка, указывающая направление на запад? <span class = "necessarily">*</span></h2>
                     <image src='/img/question1.png' alt='image'></image>
                     <label class = 'label'>
-                        <input type="radio" name='question1Choise1' value="A">
+                        <input type="radio" name='question1Choise1' value="question1-A">
                         <span class = 'radio_span'></span>
                         <span>A</span>
                     </label><br>
-                    <label><input type="radio" name='question1Choise2' value="B">
+                    <label><input type="radio" name='question1Choise2' value="question1-B">
                         <span class = 'radio_span'></span>
                         <span>B</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question1Choise3' value='C'>
+                        <input type="radio" name='question1Choise3' value='question1-C'>
                         <span class = 'radio_span'></span>
                         <span>C</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question1Choise4' value='D'>
+                        <input type="radio" name='question1Choise4' value='question1-D'>
                         <span class = 'radio_span'></span>
                         <span>D</span>
                     </label><br>
@@ -64,21 +64,21 @@
                     <h2>2. Какой буквой на карте обозначена точка с координатами 37°ю.ш. и 2°з.д.? <span class = "necessarily">*</span></h2>
                     <image src='/img/question2.png' alt='image'></image>
                     <label>
-                        <input type="radio" name='question2Choise1' value="A">
+                        <input type="radio" name='question2Choise1' value="question2-A">
                         <span class = 'radio_span'></span>
                         <span>A</span>
                     </label><br>
-                    <label><input type="radio" name='question2Choise2' value="B">
+                    <label><input type="radio" name='question2Choise2' value="question2-B">
                         <span class = 'radio_span'></span>
                         <span>B</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question2Choise3' value='C'>
+                        <input type="radio" name='question2Choise3' value='question2-C'>
                         <span class = 'radio_span'></span>
                         <span>C</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question2Choise4' value='D'>
+                        <input type="radio" name='question2Choise4' value='question2-D'>
                         <span class = 'radio_span'></span>
                         <span>D</span>
                     </label><br>
@@ -87,22 +87,22 @@
                 <div class="test__question3">
                     <h2>3. Укажите верное определение меридиана: <span class = "necessarily">*</span></h2>
                     <label>
-                        <input type="radio" name='question3Choise1' value="A">
+                        <input type="radio" name='question3Choise1' value="question3-A">
                         <span class = 'radio_span'></span>
                         <span>линия, проведенная параллельно экватору</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question3Choise2' value="B">
+                        <input type="radio" name='question3Choise2' value="question3-B">
                         <span class = 'radio_span'></span>
                         <span class="text">воображаемая линия на поверхности Земли, проведенная с Запада на Восток</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question3Choise3' value='C'>
+                        <input type="radio" name='question3Choise3' value='question3-C'>
                         <span class = 'radio_span'></span>
                         <span>воображаемая линия, соединяющая Северный и Южный полюс<br> по кратчайшему пути</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question3Choise4' value='D'>
+                        <input type="radio" name='question3Choise4' value='question3-D'>
                         <span class = 'radio_span'></span>
                         <span>воображаемая линия, соединяющая Северный и Южный полюс<br> по кратчайшему пути</span>
                     </label><br>
@@ -111,21 +111,21 @@
                 <div class="test__question4">
                     <h2>4. Выберите верные ответы. Широта объекта может быть: <span class = "necessarily">*</span></h2>
                     <label>
-                        <input type="checkbox" name='question4Choise1' value="A">
+                        <input type="checkbox" name='question4Choise1' value="question4-A">
                         <span class='checkbox_span'></span>
                         <span>Северной</span>
                     </label><br>
-                    <label><input type="checkbox" name='question4Choise2' value="B">
+                    <label><input type="checkbox" name='question4Choise2' value="question4-B">
                         <span class='checkbox_span'></span>
                         <span>Восточной</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question4Choise3' value='C'>
+                        <input type="checkbox" name='question4Choise3' value='question4-C'>
                         <span class='checkbox_span'></span>
                         <span>Южной</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question4Choise4' value='D'>
+                        <input type="checkbox" name='question4Choise4' value='question4-D'>
                         <span class='checkbox_span'></span>
                         <span>Западной</span>
                     </label><br>
@@ -135,21 +135,21 @@
                 <div class="test__question5">
                     <h2>5. По физической карте полушарий определите и выберите из списка верные координаты г. Москва <span class = "necessarily">*</span></h2>
                     <label>
-                        <input type="radio" name='question5Choise1' value="A">
+                        <input type="radio" name='question5Choise1' value="question5-A">
                         <span class = 'radio_span'></span>
                         <span>15°ю.ш. и 47°з.д.</span>
                     </label><br>
-                    <label><input type="radio" name='question5Choise2' value="B">
+                    <label><input type="radio" name='question5Choise2' value="question5-B">
                         <span class = 'radio_span'></span>
                         <span>59°с.ш. и 30°в.д.</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question5Choise3' value='C'>
+                        <input type="radio" name='question5Choise3' value='question5-C'>
                         <span class = 'radio_span'></span>
                         <span>55°с.ш. и 37°в.д.</span>
                     </label><br>
                     <label>
-                        <input type="radio" name='question5Choise4' value='D'>
+                        <input type="radio" name='question5Choise4' value='question5-D'>
                         <span class = 'radio_span'></span>
                         <span>52°с.ш. и 36°в.д.</span>
                     </label><br>
@@ -171,51 +171,51 @@
                         бы он двигался с востока на запад, то совершил бы путешествие за 81 день. Мистер Фогг в последнюю секунду прибывает в клуб и выигрывает пари.
                     </p>
                     <label>
-                        <input type="checkbox" name='question1Choise1' value="A">
+                        <input type="checkbox" name='question6Choise1' value="question6-A">
                         <span class='checkbox_span'></span>
                         <span>Лондон</span>
                     </label><br>
-                    <label><input type="checkbox" name='question1Choise2' value="B">
+                    <label><input type="checkbox" name='question6Choise2' value="question6-B">
                         <span class='checkbox_span'></span>
                         <span>Париж</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise3' value='C'>
+                        <input type="checkbox" name='question6Choise3' value='question6-C'>
                         <span class='checkbox_span'></span>
                         <span>Коломбо</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise4' value='D'>
+                        <input type="checkbox" name='question6Choise4' value='question6-D'>
                         <span class='checkbox_span'></span>
                         <span>Мумбаи</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise1' value="A">
+                        <input type="checkbox" name='question6Choise5' value="question6-E">
                         <span class='checkbox_span'></span>
                         <span>Калькутта</span>
                     </label><br>
-                    <label><input type="checkbox" name='question1Choise2' value="B">
+                    <label><input type="checkbox" name='question6Choise6' value="question6-F">
                         <span class='checkbox_span'></span>
                         <span>Сянган (Гонконг)</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise3' value='C'>
+                        <input type="checkbox" name='question6Choise7' value='question6-G'>
                         <span class='checkbox_span'></span>
                         <span>Сан-Диего</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise4' value='D'>
+                        <input type="checkbox" name='question6Choise8' value='question6-H'>
                         <span class='checkbox_span'></span>
                         <span>Сан-Франциско</span>
                     </label><br>
                     <label>
-                        <input type="checkbox" name='question1Choise4' value='D'>
+                        <input type="checkbox" name='question6Choise9' value='question6-I'>
                         <span class='checkbox_span'></span>
                         <span>Нью-Йорк</span>
                     </label><br>
                 </div>
                 <div class="test__post">
-                    <button type = 'submit' class="test__post_post">Отправить</button>
+                    <button class="test__post_post">Отправить</button>
                     <button class="test__post_reset">Очистить форму</button>
                 </div>
             </form>
