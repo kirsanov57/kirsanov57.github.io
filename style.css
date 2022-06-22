@@ -1,0 +1,312 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('image/bg2.jpg') no-repeat left;
+    z-index: -3;
+}
+
+.text {
+    color: white;
+}
+
+.sun, .mercury, .venus, .earth, .mars, .jupiter, .saturn, .uran, .neptune  {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:50%;    
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+}
+
+.sun {
+    background: url('/image/Sun2.png') no-repeat center / cover;
+    left: 50%;
+    height: 180px;
+    width: 180px;
+}
+
+.mercury {
+    background: url('/image/Mercury.png') no-repeat center / cover;
+    height: 60px;
+    width: 60px;
+    left: 42%;
+    top:38%;
+    transform: translate(0,0);
+    offset-path: path('M302 112C302 142.536 285.26 170.263 258.032 190.392C230.805 210.52 193.143 223 151.5 223C109.857 223 72.195 210.52 44.9678 190.392C17.7403 170.263 1 142.536 1 112C1 81.4636 17.7403 53.7367 44.9678 33.6082C72.195 13.4798 109.857 1 151.5 1C193.143 1 230.805 13.4798 258.032 33.6082C285.26 53.7367 302 81.4636 302 112Z');
+    animation: move 8s infinite linear;
+}
+
+.venus {
+    background: url('/image/Venus.png') no-repeat center / cover;
+    left: 38%;
+    height: 70px;
+    width: 70px;
+    top:33%; 
+    transform: translate(0, 0);
+    offset-path: path('M461 159C461 202.483 435.395 241.959 393.775 270.606C352.159 299.251 294.612 317 231 317C167.388 317 109.841 299.251 68.2253 270.606C26.6052 241.959 1 202.483 1 159C1 115.517 26.6052 76.0414 68.2253 47.3938C109.841 18.7491 167.388 1 231 1C294.612 1 352.159 18.7491 393.775 47.3938C435.395 76.0414 461 115.517 461 159Z');
+    animation: move 10s infinite linear;
+    
+}
+
+.earth {
+    background: url('/image/Earth.png') no-repeat center / cover;
+    left: 33%;
+    height: 105px;
+    width: 105px;
+    top: 28%; 
+    transform: translate(0,0);
+    offset-path: path('M659 205C659 261.137 622.368 312.114 562.818 349.107C503.282 386.092 420.971 409 330 409C239.029 409 156.718 386.092 97.1825 349.107C37.6315 312.114 1 261.137 1 205C1 148.863 37.6315 97.8863 97.1825 60.8926C156.718 23.9081 239.029 1 330 1C420.971 1 503.282 23.9081 562.818 60.8926C622.368 97.8863 659 148.863 659 205Z');
+    animation: move 14s infinite linear;
+    
+}
+
+.mars {
+    background: url('/image/Mars.png') no-repeat center / cover;
+    left: 28%;
+    height: 69px;
+    width: 69px;
+    top:23%; 
+    transform: translate(0,0);
+    offset-path: path('M839 250C839 318.542 792.32 380.771 716.473 425.917C640.648 471.052 535.831 499 420 499C304.169 499 199.352 471.052 123.527 425.917C47.68 380.771 1 318.542 1 250C1 181.458 47.68 119.229 123.527 74.0826C199.352 28.9484 304.169 1 420 1C535.831 1 640.648 28.9484 716.473 74.0826C792.32 119.229 839 181.458 839 250Z');
+    animation: move 19s infinite linear;
+}
+
+.jupiter {
+    background: url('/image/Jupiter.png') no-repeat center / cover;
+    left: 23%;
+    height: 100px;
+    width: 100px;
+    top:18%; 
+    transform: translate(0,0);
+    offset-path: path('M1063 300C1063 382.322 1003.82 457.053 907.69 511.261C811.592 565.451 678.768 599 532 599C385.232 599 252.408 565.451 156.31 511.261C60.1823 457.053 1 382.322 1 300C1 217.678 60.1823 142.947 156.31 88.739C252.408 34.5489 385.232 1 532 1C678.768 1 811.592 34.5489 907.69 88.739C1003.82 142.947 1063 217.678 1063 300Z');
+    animation: move 25s infinite linear;
+}
+
+.saturn {
+    background: url('/image/Saturn.png') no-repeat center / cover;
+    left: 15%;
+    height: 80px;
+    width: 170px;
+    top:12%; 
+    transform: translate(0,0);
+    offset-path: path('M1349 355C1349 452.474 1273.86 540.961 1151.83 605.138C1029.85 669.291 861.267 709 675 709C488.733 709 320.149 669.291 198.168 605.138C76.1415 540.961 1 452.474 1 355C1 257.526 76.1415 169.039 198.168 104.862C320.149 40.7094 488.733 1 675 1C861.267 1 1029.85 40.7094 1151.83 104.862C1273.86 169.039 1349 257.526 1349 355Z');
+    animation: move 31s infinite linear;
+}
+
+.uran {
+    background: url('/image/Uran.png') no-repeat center / cover;
+    left:7.5%;
+    height: 110px;
+    width: 110px;
+    top:8%; 
+    transform: translate(0,0);
+    offset-path: path('M1629 395C1629 503.477 1538.25 601.972 1390.86 673.407C1243.53 744.809 1039.94 789 815 789C590.061 789 386.467 744.809 239.144 673.407C91.7524 601.972 1 503.477 1 395C1 286.523 91.7524 188.028 239.144 116.593C386.467 45.1909 590.061 1 815 1C1039.94 1 1243.53 45.1909 1390.86 116.593C1538.25 188.028 1629 286.523 1629 395Z');
+    animation: move 39s infinite linear;
+}
+
+.neptune {
+    background: url('/image/Neptune.png') no-repeat center / cover;
+    left: 2%;
+    top:3%;
+    height: 65px;
+    width: 65px;
+    transform: translate(0,0);
+    offset-path: path('M1839 437.75C1839 555.255 1736.52 664.066 1570.11 743.562C1403.78 823.018 1173.93 873 920 873C666.067 873 436.22 823.018 269.893 743.562C103.484 664.066 1 555.255 1 437.75C1 320.244 103.486 211.058 269.894 131.188C436.222 51.3568 666.068 1 920 1C1173.93 1 1403.78 51.3568 1570.11 131.188C1736.51 211.058 1839 320.244 1839 437.75Z');
+    animation: move 45s infinite linear;
+}
+
+.mercury-line, .venus-line, .earth-line, .mars-line, .jupiter-line, .saturn-line,
+ .uran-line, .neptune-line {
+    position: absolute;
+    margin: 0 auto;
+    height: 224px;
+    width: 300px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.venus-line {
+    height: 320px;
+    width: 460px;
+}
+
+.earth-line{
+    height: 410px;
+    width: 660px;
+}
+
+.mars-line {
+    height: 500px;
+    width: 840px;
+}
+
+.jupiter-line {
+    height: 600px;
+    width: 1064px;
+}
+
+.saturn-line {
+    height: 710px;
+    width: 1350px;
+}
+
+.uran-line {
+    height: 790px;
+    width: 1630px;
+}
+
+.neptune-line {
+    height: 874px;
+    width: 1840px;
+}
+
+@keyframes move {
+    from{
+        offset-distance: 100%;
+    }
+    to {
+        offset-distance: 0%;
+    }
+}
+
+.planet-info {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 700px;
+    height: 100vh;
+    left: -700px;
+    background-color: rgb(53, 50, 50);
+    overflow-y: scroll;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.close::after {
+    content: '';
+    top: 50%;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 1s;
+}
+
+.close::before {
+    top: 50%;
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    transition: all 1s;
+}
+
+.close-active::before {
+    transform: rotate(45grad);
+    transition: 1.2s;
+}
+
+.close-active::after {
+    transform: rotate(-45grad);
+    transition: 1.2s;
+}
+
+.description-planet-mercury, .description-planet-venus, .description-planet-earth, .description-planet-mars, .description-planet-jupiter,
+.description-planet-saturn, .description-planet-uran, .description-planet-neptune, .description-planet-sun {
+    color: white;
+    padding: 30px 40px 25px 40px;
+    position: relative;
+}
+
+.description-title-mercury, .description-title-venus, .description-title-earth, .description-title-mars {
+    text-align: center;
+    color: orange;
+}
+
+.description-image-mercury, .description-image-venus, .description-image-earth, .description-image-mars {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.description-image-sun {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: baseline;
+}
+
+.description-image-sun img{
+    width: 90%;
+}
+
+.description-features-mercury, .description-features-venus, .description-features-earth, .description-features-mars {
+    line-height: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: baseline;
+    text-align: center;
+}
+
+.description-features-title-mercury, .description-features-title-venus, .description-features-title-earth, .description-features-title-mars {
+    color: orange;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.description-info-mercury h2, .description-info-venus h2, .description-info-earth h2, .description-info-mars h2{
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description-info-descr-mercury, .description-info-descr-venus, .description-info-descr-earth, .description-info-descr-mars {
+    text-indent: 20px;
+    line-height: 28px;
+}
+
+.planet-info::-webkit-scrollbar {
+    width: 7px;
+
+}
+  
+.planet-info::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+    transition: 1s;
+}
+
+.active {
+left: 0px;
+opacity: 1;
+transition: all 1s;
+}
