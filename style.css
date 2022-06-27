@@ -6,9 +6,9 @@
 
 .bg {
     position: absolute;
-    max-width: 1920px;
+    width: 1920px;
     max-height: 937px;
-/*     background: url('image/bg2.jpg') no-repeat center / cover; */
+    /* background: url('image/bg2.jpg') no-repeat center / cover; */
     z-index: -3;
 }
 
@@ -38,7 +38,6 @@
     width: 45px;
     top:372px;
     left: 840px;
-    transform: translate(0, 0);
     offset-path: path('M239.5 95C239.5 147.088 186.113 189.5 120 189.5C53.8868 189.5 0.5 147.088 0.5 95C0.5 42.9117 53.8868 0.5 120 0.5C186.113 0.5 239.5 42.9117 239.5 95Z');
     animation: move 18s infinite linear;
 }
@@ -49,7 +48,6 @@
     height: 50px;
     width: 50px;
     top:330px; 
-    transform: translate(0, 0);
     offset-path: path('M419 140C419 178.222 395.761 212.947 357.938 238.163C320.121 263.374 267.82 279 210 279C152.18 279 99.879 263.374 62.0623 238.163C24.2385 212.947 1 178.222 1 140C1 101.778 24.2385 67.0529 62.0623 41.8371C99.879 16.6259 152.18 1 210 1C267.82 1 320.121 16.6259 357.938 41.8371C395.761 67.0529 419 101.778 419 140Z');
     animation: move 25s infinite linear;
     
@@ -61,7 +59,6 @@
     height: 73px;
     width: 73px;
     top: 280px; 
-    transform: translate(0,0);
     offset-path: path('M639 190C639 241.973 603.514 289.201 545.764 323.49C488.034 357.767 408.217 379 320 379C231.783 379 151.966 357.767 94.2364 323.49C36.4856 289.201 1 241.973 1 190C1 138.027 36.4856 90.7991 94.2364 56.5096C151.966 22.2329 231.783 1 320 1C408.217 1 488.034 22.2329 545.764 56.5096C603.514 90.7991 639 138.027 639 190Z');
     animation: move 32s infinite linear;
     
@@ -73,7 +70,6 @@
     height: 49px;
     width: 49px;
     top:230px; 
-    transform: translate(0,0);
     offset-path: path('M839 240C839 305.76 792.345 365.491 716.489 408.837C640.66 452.168 535.838 479 420 479C304.162 479 199.34 452.168 123.511 408.837C47.6548 365.491 1 305.76 1 240C1 174.24 47.6548 114.509 123.511 71.1626C199.34 27.8322 304.162 1 420 1C535.838 1 640.66 27.8322 716.489 71.1626C792.345 114.509 839 174.24 839 240Z');
     animation: move 40s infinite linear;
 }
@@ -84,40 +80,36 @@
     height: 75px;
     width: 75px;
     top:170px; 
-    transform: translate(0,0);
     offset-path: path('M1099 300C1099 382.305 1037.82 457.039 938.43 511.254C839.073 565.449 701.744 599 550 599C398.256 599 260.927 565.449 161.57 511.254C62.1752 457.039 1 382.305 1 300C1 217.695 62.1752 142.961 161.57 88.7459C260.927 34.5511 398.256 1 550 1C701.744 1 839.073 34.5511 938.43 88.7459C1037.82 142.961 1099 217.695 1099 300Z');
     animation: move 50s infinite linear;
 }
 
 .saturn {
     background: url('/image/Saturn.png') no-repeat center / cover;
-    left: 15%;
+    left: 285px;
     height: 60px;
     width: 131.25px;
-    top:12%; 
-    transform: translate(0,0);
+    top:115px; 
     offset-path: path('M1349 355C1349 452.474 1273.86 540.961 1151.83 605.138C1029.85 669.291 861.267 709 675 709C488.733 709 320.149 669.291 198.168 605.138C76.1415 540.961 1 452.474 1 355C1 257.526 76.1415 169.039 198.168 104.862C320.149 40.7094 488.733 1 675 1C861.267 1 1029.85 40.7094 1151.83 104.862C1273.86 169.039 1349 257.526 1349 355Z');
     animation: move 61s infinite linear;
 }
 
 .uran {
     background: url('/image/Uran.png') no-repeat center / cover;
-    left:7.5%;
+    left: 145px;
     height: 82.5px;
     width: 82.5px;
-    top:8%; 
-    transform: translate(0,0);
+    top:75px; 
     offset-path: path('M1629 395C1629 503.477 1538.25 601.972 1390.86 673.407C1243.53 744.809 1039.94 789 815 789C590.061 789 386.467 744.809 239.144 673.407C91.7524 601.972 1 503.477 1 395C1 286.523 91.7524 188.028 239.144 116.593C386.467 45.1909 590.061 1 815 1C1039.94 1 1243.53 45.1909 1390.86 116.593C1538.25 188.028 1629 286.523 1629 395Z');
     animation: move 73s infinite linear;
 }
 
 .neptune {
     background: url('/image/Neptune.png') no-repeat center / cover;
-    left: 2%;
-    top:3%;
+    left: 40px;
+    top: 33px;
     height: 48.75px;
     width: 48.75px;
-    transform: translate(0,0);
     offset-path: path('M1839 437.75C1839 555.255 1736.52 664.066 1570.11 743.562C1403.78 823.018 1173.93 873 920 873C666.067 873 436.22 823.018 269.893 743.562C103.484 664.066 1 555.255 1 437.75C1 320.244 103.486 211.058 269.894 131.188C436.222 51.3568 666.068 1 920 1C1173.93 1 1403.78 51.3568 1570.11 131.188C1736.51 211.058 1839 320.244 1839 437.75Z');
     animation: move 85s infinite linear;
 }
@@ -327,4 +319,25 @@
 left: 0px;
 opacity: 1;
 transition: all 1s;
+}
+
+.description-moon-btn {
+    position: absolute;
+    background-color: inherit;
+    width: 160px;
+    height: 46px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 8px;
+    transition: 0.4s linear;
+    right: 35px;
+    top: 100px;
+}
+
+.description-moon-btn:hover {
+    background-color: black;
 }
