@@ -25,9 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.description-planet-jupiter'), document.querySelector('.description-planet-saturn'),
     document.querySelector('.description-planet-uran'), document.querySelector('.description-planet-neptune'),
     this.document.querySelector('.description-planet-sun')];
-
     
-
     let mercury = this.document.querySelector('.mercury'),
     venus = this.document.querySelector('.venus'),
     earth = document.querySelector('.earth'),
@@ -89,7 +87,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 close.click();
                 setTimeout(() => {
                     event.target.click();
-                },600)
+                }, 600)
             } else {
                 close.click();
             }
@@ -100,50 +98,19 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    sun.addEventListener('click', (e) => {
-        waitClosing(e);
-    });
-
-    mercury.addEventListener('click', function (e) {
-        console.log(document.querySelector(`.description-planet-${e.target.className}`));
-        waitClosing(e);
-    });
-
-    venus.addEventListener('click', function (e) {
-        waitClosing(e);
+    arrayPlanets.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            waitClosing(e);
+        });
     })
 
-    earth.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    mars.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    jupiter.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    saturn.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    uran.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    neptune.addEventListener('click', function (e) {
-        waitClosing(e);
-    });
-
-    close.addEventListener('click', function() {
-        planetInfo.classList.remove('active');
-        close.classList.remove('close-active');
+    close.addEventListener('click', function() {    
         planetHidden();
     });
 
     function planetHidden () {
+        planetInfo.classList.remove('active');
+        close.classList.remove('close-active');
         for (let i = 0; i < arrayPlanets.length; i++) {
             arrayDescrPlanets[i].classList.add('hidden');
         }
